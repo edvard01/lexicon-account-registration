@@ -6,7 +6,7 @@ In this exercise you will build a form in which you can simulate a creation of a
 
 The form should have to following content and functionlity.
 
-- Five inputs must be included and they should reside within a <form>. nameand username which must be of type text. One input for email that is of type email and two inputs for password and confirm password. They should of course be of type password.
+- Five inputs must be included and they should reside within a <form>. name and username which must be of type text. One input for email that is of type email and two inputs for password and confirm password. They should of course be of type password.
 
 - One input or button for submitting the form.
 
