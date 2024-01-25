@@ -96,9 +96,11 @@ function comparePasswords() {
     if (pwRepeatInput.value !== pwInput.value) {
       pwRepeatLabel.style.color = "red";
       pwRepeatLabel.innerHTML = "Repeat Password - Passwords do not match!";
+      btn.disabled = true;
     } else {
       pwRepeatLabel.style.color = "black";
       pwRepeatLabel.innerHTML = "Repeat Password";
+      btn.disabled = false;
       return true;
     }
   }
