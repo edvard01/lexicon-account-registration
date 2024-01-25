@@ -1,7 +1,6 @@
 const btn = document.getElementById("submit-button");
 const label = document.querySelectorAll("label");
 const statusElement = document.getElementById("status-message");
-
 const nameInput = document.getElementById("name");
 const userNameInput = document.getElementById("username");
 const emailInput = document.getElementById("email");
@@ -15,7 +14,13 @@ btn.addEventListener("click", (e) => {
 
   let validated = validateInputs();
   if (validated) {
+    let account = createAccountObject();
+    console.log(account);
     statusElement.innerHTML = "Your account has been signed up!";
+    const inputFields = document.querySelectorAll("input");
+    inputFields.forEach((element) => {
+      element.style.borderColor = "green";
+    });
   }
 });
 
@@ -106,4 +111,13 @@ function comparePasswords() {
   }
 
   return false;
+}
+
+function createAccountObject() {
+  return {
+    name: nameInput.value,
+    username: userNameInput.value,
+    email: emailInput.value,
+    password: pwInput.value,
+  };
 }
