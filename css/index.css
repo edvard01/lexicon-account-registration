@@ -37,18 +37,30 @@ body {
 
 .login-box > .form-container > form > label {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 22px;
+  font-size: 16px;
   margin-top: 15px;
 }
 
 .login-box > .form-container > form > input {
   width: 400px;
   height: 32px;
+  border-color: gray;
+  border-style: inset;
 }
 
 .login-box > .form-container > form > button {
   color: white;
   background-color: green;
+  border: none;
+  width: 100px;
+  padding: 14px 22px;
+  border-radius: 24px;
+  margin-top: 24px;
+}
+
+.login-box > .form-container > form > button:disabled {
+  color: black;
+  background-color: gray;
   border: none;
   width: 100px;
   padding: 14px 22px;
